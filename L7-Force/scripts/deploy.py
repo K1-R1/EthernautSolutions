@@ -10,4 +10,4 @@ def deploy():
 
 def self_destruct(account, hack_force):
     hack_force._receive({'from': account, 'value':( 0.001 * 10**18)}).wait(1)
-    hack_force.selfDestruct({'from': account}).wait(1)
+    hack_force.selfDestroy({'from': account}).wait(1)
