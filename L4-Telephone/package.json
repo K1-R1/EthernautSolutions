@@ -1,6 +1,7 @@
 {
   "name": "hardhat-project",
   "dependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
     "hardhat-deploy": "^0.11.0"
   }
 }
