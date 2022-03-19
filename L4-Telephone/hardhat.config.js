@@ -24,7 +24,7 @@ const ETHERSCAN_API = process.env.ETHERSCAN_API
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
-  solidity: "0.8.4",
+  solidity: "0.6.0",
   defaultNetwork: "rinkeby",
   networks: {
     rinkeby: {
