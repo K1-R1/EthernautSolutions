@@ -1,0 +1,7 @@
+dotenv: .env
+
+wallets:
+  dev_account_1: 
+    address: ${D1_ADDRESS}
+    private_key: ${D1_PRIVATE_KEY}
+    
