@@ -1,5 +1,8 @@
+## Steps
 1. Become `owner` in implementation, in order to use `addToWhitelist`:
-- `owner` is slot 0 in implementation, `pendingAdmin` is slot 0 in proxy; so set attacker as `pendingAdmin`.
+- `owner` is slot 0 in implementation, `pendingAdmin` is slot 0 in proxy; so set attacker(`player`) as `pendingAdmin`.
+### Step 1 console code
+- `fnSig = {name: 'proposeNewAdmin', type: 'function', inputs: [{type: 'address', name: '_newAdmin'}]}`
 
 2. Add attacker to `whitelisted`, in order to access implementation functions; `multicall` `execute` `setMaxBalance`
 
