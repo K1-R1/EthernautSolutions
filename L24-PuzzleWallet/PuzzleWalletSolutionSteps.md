@@ -15,5 +15,7 @@
 3. Drain all funds from the implementation, in order to use `setMaxBalance`:
 - use `deposit` via `multicall`, so that `msg.value` can be reused, in order to set `balances[attacker]` to maximum
 - use `execute` to withdraw all funds to attacker
+### Step 3 console code
+- `depositData = await contract.methods["deposit()"].request().then(value => value.data)`
 
 4. Use `setMaxBalance` to set value of `admin` in proxy to attacker
