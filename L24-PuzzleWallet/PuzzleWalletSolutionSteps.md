@@ -23,3 +23,5 @@
 - confirm with `await getBalance(contract.address)`; should be 0 as all funds drained
 
 4. Use `setMaxBalance` to set value of `admin` in proxy to attacker
+### Step 3 console code
+- `await contract.setMaxBalance(player)`
