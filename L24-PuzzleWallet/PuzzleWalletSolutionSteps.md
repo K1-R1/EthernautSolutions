@@ -7,7 +7,9 @@
 - `await web3.eth.sendTransaction({from: player, to: contract.address, data})`
 - confirm with: `await contract.owner()`; should be address of attacker
 
-2. Add attacker to `whitelisted`, in order to access implementation functions; `multicall` `execute` `setMaxBalance`
+2. Use `addToWhitelist` to add attacker to `whitelisted`, in order to access implementation functions; `multicall` `execute` `setMaxBalance`
+### Step 2 console code
+- `await contract.addToWhitelist(player)`
 
 3. Drain all funds from the implementation, in order to use `setMaxBalance`:
 - use `deposit` via `multicall`, so that `msg.value` can be reused, in order to set `balances[attacker]` to maximum
