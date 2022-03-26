@@ -6,3 +6,5 @@
 3. Drain all funds from the implementation, in order to use `setMaxBalance`:
 - use `deposit` via `multicall`, so that `msg.value` can be reused, in order to set `balances[attacker]` to maximum
 - use `execute` to withdraw all funds to attacker
+
+4. Use `setMaxBalance` to set value of `admin` in proxy to attacker
