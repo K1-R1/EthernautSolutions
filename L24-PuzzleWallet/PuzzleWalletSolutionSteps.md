@@ -3,6 +3,7 @@
 - `owner` is slot 0 in implementation, `pendingAdmin` is slot 0 in proxy; so set attacker(`player`) as `pendingAdmin`.
 ### Step 1 console code
 - `fnSig = {name: 'proposeNewAdmin', type: 'function', inputs: [{type: 'address', name: '_newAdmin'}]}`
+- `data = web3.eth.abi.encodeFunctionCall(fnSig, [player])`
 
 2. Add attacker to `whitelisted`, in order to access implementation functions; `multicall` `execute` `setMaxBalance`
 
